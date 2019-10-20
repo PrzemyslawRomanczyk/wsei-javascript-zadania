@@ -78,3 +78,4 @@ var arr = [
         }
         return c_arr;
     }
+    create2DArray(4,4);
