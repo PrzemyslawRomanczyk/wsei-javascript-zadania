@@ -67,12 +67,14 @@ var arr = [
     print2DArray(new_arr);
     //Zadanie5
     var create2DArray= function(rows,columns){
-        var c_arr = [[]];
+        var c_arr = [];
         var k = 1;
         for(let i=0; i< rows;i++){
+            c_arr.push([]);
             for(let j=0; j< columns;j++){
-                c_arr[i][j]=k;
+                c_arr[i].push(k);
                 k++;
             }
         }
+        return c_arr;
     }
