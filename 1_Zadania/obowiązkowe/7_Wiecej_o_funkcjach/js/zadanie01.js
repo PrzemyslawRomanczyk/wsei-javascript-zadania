@@ -1,25 +1,24 @@
-
 /**
  * Zagniezdzanie funkcji.
  * Przesledz krok po kroku kazda linijke kodu. Kazda!
  * Napisz komentarze dla kazdej z linijek kodu
  */
 
-//Twoj komentarz ...
+//deklaracja funkcji sortArray
 function sortArray() {
 
-    //Twoj komentarz ...
+    //deklaracja tablicy liczb points
     var points = [41, 3, 6, 1, 114, 54, 64];
 
-    //Twoj komentarz ...
-    points.sort(function (a, b) {
-        //Twoj komentarz ...
+    //wywołanie metody bibliotecznej sort dla tablicy points, do sortowania zostanie użyta funkcja 
+    points.sort(function(a, b) {
+        //deklaracja funkcji uzytej przy sorotwaniu
         return a - b;
     });
 
-    //Twoj komentarz ...
+    //Zwrócenie tablicy points posortowanej według defaultowego słownikowego algorytmu 
     return points;
 }
 
-//Twoj komentarz ...
+//wywołanie funkcji sortArray
 sortArray();

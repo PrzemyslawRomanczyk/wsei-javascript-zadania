@@ -5,28 +5,30 @@
  */
 
 
-//Twoj komentarz ...
+//Deklarcja funkcji jeden
 function jeden() {
 
-    //Twoj komentarz ...
+    //Deklaracja zmiennej lokalnej
     var zmienna1 = 1;
 
-    //Twoj komentarz ...
+    //Deklaracja funkcji dwa
     function dwa() {
 
-        //Twoj komentarz ...
+        //Wypisanie zmiennej z funkcji numer jeden, funkcja dwa może mieć dostęp do tej zmiennej
+        // ponieważ jest zdefiniowana wewnątrz funkcji jeden
         console.log(zmienna1);
 
-        //Twoj komentarz ...
+        //definicja zmiennej lokalnej dla funkcji dwa
         var zmienna2 = 3;
     }
 
-    //Twoj komentarz ...
+    //wywołanie funkcji dwa
     dwa();
 
-    //Twoj komentarz ...
+    //wypisanie zmiennej2 zadeklarowanej w funkcji dwa, funkcja jeden nie ma dostępu do tej zmiennej
+    // ponieważ jest to zmienna lokalna funkcji dwa i nie została ona zwrócona przez funkcję dwa
     console.log(zmienna2)
 }
 
-//Twoj komentarz ...
+//wywołanie funkcji jeden
 jeden()
