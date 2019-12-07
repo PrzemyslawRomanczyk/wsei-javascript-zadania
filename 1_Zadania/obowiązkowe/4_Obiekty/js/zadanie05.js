@@ -1,10 +1,8 @@
-var animals = [
-    {
+var animals = [{
         type: "cat",
         breed: "persian",
         name: "Tiberius",
-        health: [
-            {
+        health: [{
                 date: "2012-03-03",
                 visitType: "grafting"
             },
@@ -18,8 +16,7 @@ var animals = [
         type: "Guinea pig",
         breed: "The Rex",
         name: "Marko",
-        health: [
-            {
+        health: [{
                 date: "2015-12-04",
                 visitType: "grafting"
             },
@@ -31,3 +28,10 @@ var animals = [
     }
 
 ]
+
+for (var i = 0; i < animals.length; i++) {
+    var animal = animals[i];
+    for (var prop in animal) {
+        console.log(animal[prop]);
+    }
+}
