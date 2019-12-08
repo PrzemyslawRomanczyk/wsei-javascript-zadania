@@ -21,6 +21,6 @@ witaj();
 var witaj = function() {
         console.log("Witaj");
     }
-    // Funkcja w dalszym ciągu wypisuje "Witaj" w konsoli chociaż napierw wywołujemy funkcję a potem ją deklarujemy
+    // Funkcja wypisze undefinde ponieważ zmiennej witaj zostało przypisane undefined
 
-//W Java Script nie ma różnicy czy najpierw deklarujemy funkcję czy ją wywołujemy
+//W Java Script wystepuje hoisting więc 
