@@ -1,18 +1,10 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const buttons = [
-        document.getElementById('button1'),
-        document.getElementById('button2'),
-        document.getElementById('button3')
-    ]
-    const counters = Array.from(document.querySelectorAll('.counter'))
+document.addEventListener("DOMContentLoaded", function() {
+    const buttons = document.querySelectorAll("#button1, #button2, #button3")
 
-    buttons.forEach((button, index) => {
-        button.addEventListener('click', function() {
-            const value = parseInt(counters[index].innerText)
-            counters[index].innerText = 1 + value
-            console.log("1");
+    buttons.forEach(element => {
+        element.addEventListener("click", function() {
+            this.nextElementSibling.querySelector('.counter').innerHTML = parseInt(
+                this.nextElementSibling.querySelector('.counter').innerHTML) + 1
         })
-    })
-
-
+    });
 })
